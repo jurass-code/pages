@@ -1,0 +1,122 @@
+.provisions {
+
+    background: linear-gradient(341.83deg, $blue -0%, $blue4 77.44%);
+    &__top {
+        width: 100%;
+        height: 60px;
+        background: white;
+        box-shadow: 0px 38px 56px rgba(109, 93, 202, .3), 0px 20.7957px 15.3272px rgba(102, 86, 185, .177553), 0px 15.8955px 0px rgba(92, 76, 182, .0372931);
+        border-radius: 0px 0px 8px 8px;
+        &-none{
+            background: none;
+            border: none;
+            box-shadow: none;
+        }
+    }
+    &__content{
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        } 
+    }
+
+    &__title-min {
+        color: $white2;
+        margin-bottom: 16px;
+        margin-top: 60px;
+        @include tablet {
+            display: none;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__title {
+        color: white;
+        margin-bottom: 16px;
+        @include tablet {
+            display: none;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__text {
+        color: $white2;
+        @include tablet {
+            display: none;
+            padding: 0 40px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__bg {
+        background-image: url("../images/LeganProtectionYou.svg");
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: center;
+        @include tablet {
+            background-image: none;
+        }
+    }
+    &__safes{
+        display: flex;
+        padding-bottom: 115px;
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 60px;
+        }
+    }
+    &__safe {
+        &-img{
+            margin-bottom: 16px;
+        }
+        &-text {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 38px;
+            line-height: 120%;
+            color: white;
+            margin-bottom: 16px;
+            @include tablet {
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+        }
+
+        &-name {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $white2;
+            
+        }
+        &_one{
+            margin-top: 224px;
+            @include tablet {
+                margin-top: 0;
+            }
+        }
+        &_two{
+            margin-top: 144px;
+            @include tablet {
+                margin-top: 0;
+            }
+        }
+        &_three{
+            margin-top: 64px;
+            @include tablet {
+                margin-top: 0;
+            }
+        }
+        @include tablet {
+            margin-bottom: 32px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+extends ./layout/layout
+include ./components/provisions.pug
+include ./components/solutions.pug
+
+block variables
+    - var page_title = 'Главная';
+    - var scripts =['https://unpkg.com/swiper/swiper-bundle.min.js','https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js','https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js']
+
+block content
+    +solutions('for your business','Explore of our Solutions','Create a free terms and conditions agreement (aka terms of use or terms of service) for your website or app')
+    include ./components/solutionSwiper.pug
+    +provisions('')
+    include ./components/questions.pug
+    include ./components/modal.pug
+    include ./components/mobileMenu.pug

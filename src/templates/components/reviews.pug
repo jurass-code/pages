@@ -1,0 +1,47 @@
+include ./review.pug 
+
+section.reviews
+    .reviews__bg
+        .reviews__content
+            .content
+                .reviews__content-top
+                    .reviews__title-box
+                        h4.reviews__title-min.title-min Your Protection Is Our Success
+                        h1.reviews__title.title Our Customers Are Saying 
+                    p.reviews__text.text Ensured Compliance, guaranteed customer satisfaction.
+                .reviews__content-top.mob
+                    .reviews__title-box
+                        h4.reviews__title-min.title-min Easy how to eat cookies
+                        h1.reviews__title.title What Customers Are Saying
+                    p.reviews__text.text Create a free terms and conditions agreement (aka terms of use or terms of service) for your website or app.
+    .reviews__content-swiper
+        .swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    +review('../images/man.png','Albert C.','Generated a Privacy Policy','“I had two policies made, and for whatever reason there was an issue after processing the order. I sent an email to support, and to my surprise, there was a reply within ten minutes from Customer Support. TermsFeed further assisted me and stayed around to ensure my second order went smoothly.”')
+                .swiper-slide
+                    +review('../images/man2.png','Rose V.','Generated an EULA agreement','“My company develops software and web applications. I shared my experience with ITerms my coworkers as a great example of a guided system and product. I liked how the prices were included for each feature and at the end I saw the total cost and then received the EULA document in multiple formats.”')
+                .swiper-slide
+                    +review('../images/man3.png','Albert К.','Generated a Privacy Policy','“I had two policies made, and for whatever reason there was an issue after processing the order. I sent an email to support, and to my surprise, there was a reply within ten minutes from Customer Support. TermsFeed further assisted me and stayed around to ensure my second order went smoothly.”')
+                .swiper-slide
+                    +review('../images/man.png','Albert Cф.','Generated a Privacy Policy','“I had two policies made, and for whatever reason there was an issue after processing the order. I sent an email to support, and to my surprise, there was a reply within ten minutes from Customer Support. TermsFeed further assisted me and stayed around to ensure my second order went smoothly.”')
+                .swiper-slide
+                    +review('../images/man.png','Albert Cф.','Generated a Privacy Policy','“I had two policies made, and for whatever reason there was an issue after processing the order. I sent an email to support, and to my surprise, there was a reply within ten minutes from Customer Support. TermsFeed further assisted me and stayed around to ensure my second order went smoothly.”')
+        .reviews__stand
+            .arrow-swiper
+                img(src="../img/navArrow.svg", alt="arrow").arrow-swiper-prev#reviews__nav-next
+                img(src="../img/navArrow.svg", alt="arrow").arrow-swiper-next#reviews__nav-prev
+        .reviews__mark
+            p.reviews__mark-text Excellent
+            .reviews__star-box
+                img(src="../images/starMark.svg", alt="star")
+            .reviews__star-box
+                img(src="../images/starMark.svg", alt="star")
+            .reviews__star-box
+                img(src="../images/starMark.svg", alt="star")
+            .reviews__star-box
+                img(src="../images/starMark.svg", alt="star")
+            .reviews__star-box.reviews__star-box_half
+                img(src="../images/starMark.svg", alt="star")
+            p.reviews__mark-text 7,000 reviews on 
+            img(src="../images/TrustpilotLogo.svg", alt="star").reviews__trustpilotLogo

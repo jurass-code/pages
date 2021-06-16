@@ -1,0 +1,16 @@
+.arrow-swiper{
+    &-prev{
+        transform: rotate(180deg);
+        margin-right: 24px;
+    }
+    &-prev,
+&-next{
+        z-index: 2;
+        cursor: pointer;
+        transition: opacity $time;
+        &:hover{
+            opacity: .7;
+            
+        }
+    }
+}

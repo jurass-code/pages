@@ -1,0 +1,120 @@
+.reviews {
+    &__content {
+        padding-top: 124px;
+
+        @include tablet {
+            padding-top: 60px;
+        }
+    }
+
+    &__title-box {
+        max-width: 370px;
+        margin-right: 280px;
+
+        @include tablet {
+            margin-right: 0;
+        }
+    }
+
+    &__title-min {
+        margin-bottom: 16px;
+    }
+
+    &__content-top {
+        display: flex;
+        align-items: center;
+
+        @include tablet {
+            display: none;
+            max-width: 370px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__text {
+        max-width: 252px;
+
+        @include tablet {
+            max-width: 280px;
+        }
+    }
+
+    &__bg {
+        background-image: url("../images/Review.svg");
+        background-repeat: no-repeat;
+        background-position-y: 10px;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    &__content-swiper {
+        max-width: 1920px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0 180px;
+        z-index: 0;
+        margin: 0 auto;
+    }
+
+    &__stand {
+        position: absolute;
+        max-width: 825px;
+        width: 90%;
+        height: 290px;
+        background: $white;
+        box-shadow: 0px 38px 56px rgba(191, 204, 225, .39), 0px 20.7957px 15.3272px rgba(191, 204, 225, .177553), 0px 15.8955px 0px rgba(191, 204, 225, .0372931);
+        border-radius: 8px;
+        bottom: 264px;
+        z-index: -1;
+        padding: 37px 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    &__star-box {
+        background-color: $green2;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        margin-right: 2px;
+
+        &:last-child {
+            margin-right: 8px;
+        }
+
+        &_half {
+            background: linear-gradient(to right, $green2 50%, $gray5 50%);
+        }
+
+        cursor: pointer;
+
+        &:hover {
+            background: $green2;
+        }
+    }
+
+    &__mark-text {
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $black;
+        margin-right: 8px;
+    }
+
+    &__mark {
+        margin-top: 156px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__trustpilotLogo {
+        cursor: pointer;
+    }
+}

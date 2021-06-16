@@ -1,0 +1,98 @@
+.preview {
+
+    &__box-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include tablet {
+            align-items: center;
+        }
+    }
+
+    &__title-min {
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        max-width: 440px;
+        margin-bottom: 16px;
+
+        @include tablet {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 120%;
+        color: $gray3;
+        max-width: 440px;
+        margin-bottom: 40px;
+
+        &_green {
+            font-style: normal;
+            color: $green;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__box-btn {
+        display: flex;
+    }
+
+    &__content {
+        padding: 130px 0 268px;
+        width: 100%;
+
+        @include tablet {
+            padding: 0 0 120px;
+        }
+    }
+
+    &__bg {
+        max-width: 1920px;
+        margin: 0 auto;
+        background-image: url("../images/Document.svg"), url("../images/Cookie.svg"), url("../images/Line\ violet.svg"), url("../images/Hero\ image.png"), url("../images/Line\ gray.svg");
+        background-repeat: no-repeat;
+        background-position-x: 55%, 20%, left, 90%, left;
+        background-position-y: 90%, bottom, 70%, 50%, 20%;
+        background-size: 20%, 20%, auto, 55%, auto;
+
+        &_desc {
+            @include tablet {
+                background: none;
+            }
+        }
+
+
+    }
+
+    &__bg-mob {
+        background-position-x: 55%, 20%, left, 90%, left;
+        background-position-y: 90%, 80%, 50%, 50%, 29%;
+        background-size: 30%, 30%, 50%, 80%, 50%;
+        height: 30vh;
+    }
+
+
+    &__btn-mob {
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
+    }
+
+    &__btn {
+        @include tablet {
+            display: none;
+        }
+    }
+}

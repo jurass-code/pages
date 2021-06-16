@@ -1,0 +1,22 @@
+extends ./layout/layout
+include ./components/provisions.pug
+block variables
+    - var page_title = 'Главная';
+    - var scripts =['https://unpkg.com/swiper/swiper-bundle.min.js','https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js','https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js']
+
+block content
+    include ./components/preview.pug
+    include ./components/possibilities.pug
+    include ./components/howIsWorks.pug
+    include ./components/solutions.pug
+    +solutions('Intuitively Made For Your Business','Explore iTerms Solutions','Regardless of your requirements, iTerms has a solution ready for you to utilize.')
+    include ./components/solutionSwiper.pug
+    include ./components/credibility.pug
+    +provisions('true')
+    include ./components/reviews.pug
+    include ./components/latest.pug
+    include ./components/questions.pug
+    include ./components/modal.pug
+    include ./components/mobileMenu.pug
+
+

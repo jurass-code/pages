@@ -1,0 +1,56 @@
+.welcome {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 48px 5% 60px;
+        border-radius: 8px;
+        max-width: 600px;
+        background: white;
+        border-radius: 8px;
+        margin-bottom: 30px;
+
+        &_mini {
+            padding: 24px 0;
+        }
+    }
+
+    &__title {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black;
+        margin-bottom: 16px;
+
+        &_mini {
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+    }
+
+    &__btn{
+        margin-bottom: 48px;
+    }
+    &__img-box {
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        margin-bottom: 48px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__modal-link {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+
+    }
+}

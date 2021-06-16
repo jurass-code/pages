@@ -1,0 +1,37 @@
+.header{
+    &__content{
+        display: flex;
+        align-items: center;
+        @include tablet{
+            justify-content: space-between;
+            padding-top: 15px;
+        }
+    }
+    &__btn-box{
+        display: flex;
+        @include tablet{
+            display: none;
+        }
+    }
+    &__logo{
+        margin-right: auto;
+    }
+    &__nav{
+        margin-right: auto;
+        @include tablet{
+            display: none;
+        }
+    }
+    &__select{
+        margin-right: auto;
+        @include tablet{
+            display: none;
+        }
+    }
+    &__menu-mobile{
+        display: none;
+        @include tablet{
+            display: block;
+        }
+    }
+}

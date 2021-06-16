@@ -1,0 +1,66 @@
+.possibilities {
+    &__content {
+        padding: 110px 0 200px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__box-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__title {
+        max-width: 380px;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        max-width: 411px;
+        margin-bottom: 48px;
+    }
+
+    &__list {
+        padding-left: 64px;
+        margin-bottom: 46px;
+
+        &-item {
+            list-style-image: url("../img/Done!.svg");
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: $gray2;
+            margin-bottom: 16px;
+
+            &::marker {
+                padding-top: 2px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__btn-box{
+        display: flex;
+    }
+    &__bg{
+        max-width: 1920px;
+        margin: 0 auto;
+        background-image: url("../images/Group\ 821.png"),url("../images/AI.png");
+        background-repeat: no-repeat;
+        background-position-x: left, 53%;
+        background-position-y: 100px, 20px;
+        @include respond-to-max(1550px) { 
+            background-size: 60%,auto;
+            background-position-y: center, 20px;
+        }
+
+    }
+    @include tablet {
+        display: none;
+    }
+}

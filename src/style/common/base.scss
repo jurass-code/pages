@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    &:visited {
+        color: inherit; 
+    }
+}
+
+#page {
+    background: linear-gradient(180deg, #FEFEFF 0%, #F1F3F6 60.42%, #F1F3F6 100%);
+}
+
+.content {
+    max-width: 1110px;
+    margin: 0 auto;
+
+    @include tablet {
+        padding: 0 15px;
+    }
+}
+
+hr {
+    border: none;
+}
+
+hr {
+    border: none;
+}
+
+.hr {
+    border-top: 1px solid white;
+}
+
+.hr-blue {
+    border-top: 1px solid $blue;
+}
+
+.title-min {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $gray;
+
+    @include tablet {
+        font-size: 14px;
+    }
+}
+
+.title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 120%;
+    color: $black;
+
+    @include tablet {
+        font-size: 32px;
+    }
+}
+
+.text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray2;
+}
+
+.swiper-wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.input {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $gray;
+
+    &::placeholder {
+        color: $gray6;
+    }
+}
+
+.label {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: $gray2;
+
+}
+
+.fancybox-content {
+    padding: 0;
+    border-radius: 8px;
+    background: none;
+    width: 100%;
+}
+
+.error {
+    color: red;
+}
+
+.mob {
+    display: none !important;
+
+    @include tablet {
+        display: block !important;
+    }
+}

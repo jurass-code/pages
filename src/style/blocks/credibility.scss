@@ -1,0 +1,119 @@
+.credibility {
+    position: relative;
+
+    &__title {
+        max-width: 550px;
+        margin-bottom: 16px;
+        text-align: center;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__text {
+        max-width: 410px;
+        text-align: center;
+        margin-bottom: 150px;
+
+        @include tablet {
+            margin-bottom: 82px;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 150px;
+        margin-bottom: 90px;
+
+        @include tablet {
+            padding-top: 62px;
+            margin-bottom: 85px;
+        }
+    }
+
+    &__box-price {
+        position: relative;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 24px;
+        color: $black;
+        margin-bottom: 90px;
+
+        @include tablet {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__price {
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 120%;
+    }
+
+    &__currency {
+        position: absolute;
+        top: 0;
+        left: -11px;
+        line-height: 120%;
+    }
+
+    &__cent {
+        position: absolute;
+        top: 0;
+        right: -27px;
+        line-height: 120%;
+    }
+
+    &__title-unlim {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black
+    }
+
+    &__title-doc {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $black
+    }
+
+    &__bg {
+        margin: 0 auto;
+        max-width: 1920px;
+        background-image: url("../images/MarkerCircle.svg"), url("../images/Cards4.png"), url("../images/Cards2.png"), url("../images/Cards3.png"), url("../images/card1.png"), url("../images/CicleOffers.png");
+        background-position-x: 52%, 90%, 90%, 160px, 320px, center;
+        background-position-y: 45%, center, -70px, center, top, top;
+        background-repeat: no-repeat;
+
+        @include respond-to-max(1550px) {
+
+
+            background-size: 20%, 20%, 20%, 20%, 20%, auto;
+        }
+        @include tablet {
+            background: none;
+        }
+
+    }
+
+    &__highlighter {
+        position: absolute;
+        left: 75px;
+        top: 0;
+        z-index: 1;
+
+        @include respond-to-max(1550px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.questions {
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 60px;
+
+        @include tablet {
+            display: none;
+            text-align: left;
+        }
+    }
+
+    &__text {
+        max-width: 420px;
+        @include tablet {
+            max-width: 275px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__content {
+        padding: 180px 0 120px;
+
+        @include tablet {
+            padding: 90px 0;
+        }
+    }
+}

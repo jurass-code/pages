@@ -1,0 +1,14 @@
+.logo {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 120%;
+    color: $black;
+    cursor: pointer;
+    &_white{
+        color: white;
+    }
+    @include tablet {
+        font-size: 20px;
+    }
+}

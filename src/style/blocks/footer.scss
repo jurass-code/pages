@@ -1,0 +1,139 @@
+.footer {
+    color: white;
+
+    &__header {
+        height: 60px;
+        width: 100%;
+        background: white;
+        box-shadow: 0px 38px 56px rgba(191, 204, 225, .39), 0px 20.7957px 15.3272px rgba(191, 204, 225, .177553), 0px 15.8955px 0px rgba(191, 204, 225, .0372931);
+        border-radius: 8px 8px 0px 0px;
+        margin-bottom: -1px;
+    }
+
+    &__content {
+        background: linear-gradient(329.83deg, $blue 0%, $blue4 86.44%);
+    }
+
+    &__title {
+        //styleName: iTerms/Titles/H5;
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        margin-bottom: 24px;
+        cursor: pointer;
+        transition: opacity $time;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        @include tablet {
+            font-size: 18px;
+        }
+    }
+
+    &__list {
+        @include tablet {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__list-item {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: $white2;
+        margin-bottom: 8px;
+        cursor: pointer;
+        transition: opacity $time;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+
+    }
+
+    &__text {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: $white2;
+        margin-bottom: 8px;
+        max-width: 244px;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__logo-text {
+        @include tablet {
+            font-size: 18px;
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+
+        }
+    }
+
+    &__logo {
+        margin-bottom: 16px;
+
+    }
+
+    &__getStarted {
+        margin-bottom: 120px;
+    }
+
+    &__grid {
+        margin-bottom: 48px;
+    }
+
+    &__rights {
+        padding: 13px 0;
+        font-family: Open Sans;
+        font-size: 16px;
+        line-height: 150%;
+        color: #E7E9ED;
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+
+    &__rights-list {
+        display: flex;
+
+        &-item {
+            margin-right: 26px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            cursor: pointer;
+            transition: opacity $time;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+
+    &_display-none {
+        @include tablet {
+            display: none;
+        }
+    }
+}

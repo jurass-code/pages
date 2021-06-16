@@ -1,0 +1,43 @@
+.solutions{
+    &__title-box{
+        max-width: 400px;
+        margin-right: 250px;
+        @include tablet {
+            display: none;
+        }
+    }
+    &__title-box_mob{
+        display: none;
+        @include tablet {
+            display: block;
+        }
+    }
+    &__content{
+        padding-top: 120px;
+        display: flex;
+        align-items: center;
+        @include tablet {
+            display: block;
+            padding-top: 0;
+        }
+    }
+    &__text{
+        max-width: 310px;
+        @include tablet {
+            display: none;
+        }
+    }
+    &__text_mob{
+        display: none;
+        max-width: 330px;
+        @include tablet {
+            display: block;
+        }
+    }
+    &__bg{
+        background-image: url("../images/Solutions.png");
+        background-position-x: center;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+    }
+}

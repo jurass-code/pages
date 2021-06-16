@@ -1,0 +1,28 @@
+mixin header()
+    header.header
+        .content
+            .header__content
+                .header__logo
+                    .logo
+                        p.logo__text iTerms
+                .header__nav
+                    nav.nav
+                        a(href="#").nav__item Generate
+                        a(href="#").nav__item Contact us
+                        a(href="#").nav__item Pricing
+                        a(href="#").nav__item Blog
+                .header__select
+                    .select.js-dropDown
+                        .select__selected.js-active-select-box
+                            p.js-active-select En 
+                            img(src='../img/icon.svg', alt="arrow")
+                        ul.select__list.js-dropDown-menu
+                            li.select__item.js-select-item En
+                            li.select__item.js-select-item Ru
+                .header__btn-box
+                    .btn.btn_white.js-btn-log
+                        p.log Log in
+                    .btn.js-btn-reg
+                        p.reg Sign up
+                .header__menu-mobile
+                    img(src='../img/iconMenu.svg', alt="menu").js-btn-mobile-menu

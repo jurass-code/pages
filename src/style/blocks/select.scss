@@ -1,0 +1,32 @@
+.select {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: $black;
+    &__selected{
+        padding: 12px 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color $time;
+        &:hover{
+            background-color: $blue3
+        }
+    }
+    &__list{
+        display: none;
+        position: absolute;
+        &_rel{
+            position: relative;
+        }
+    }
+    &__item{
+        padding: 12px 16px;
+        cursor: pointer;
+        transition: background-color $time;
+        &:hover{
+            background-color: $blue3
+        }
+        
+    }
+}

@@ -1,0 +1,61 @@
+.modal(id='js-modal-reg')
+    .content
+        .modal__content
+            form(action="../response1.json" id='reg' ).signUp
+                h5.signUp__title Sign up
+                label(for="name" ).label.signUp__label Your Name
+                input(type="text" name='name' placeholder='Your Name' required).input
+                label(for="email" ).label.signUp__label Email
+                input(type="text" name='email' placeholder='Enter the Email' required).input
+                label(for="password").label.signUp__label Password
+                input(type="password" name='password' placeholder='At least 8 characters long' required).input
+                p.signUp__agreements By proceeding, I agree with the <a class='modal-link'>Terms of Service<a/> and <a  class='modal-link'>Privacy & Policy</a>
+                button.btn.signUp__submit Create account
+                p.label Sign up with
+                .signUp__social
+                    .btn.btn_white.signUp__btn <img class='btn__img' src="../img/Google.svg", alt="google"> Google
+                    .btn.btn_white.signUp__btn <img class='btn__img'  src="../img/facebook.svg", alt="Facebook"> Facebook
+                .signUp__logIn Already have an account? <a class='signUp__logIn-link modal-link js-btn-log'>Log in</a>
+            .modal__img
+
+.modal(id='js-modal-log')
+    .content
+        .modal__content
+            form(action="../response1.json" id='log').signIn
+                h5.signIn__title Sign in
+                p.label.signIn__label-top Sign in with
+                .signIn__social
+                    .btn.btn_white.signIn__btn <img class='btn__img' src="../img/Google2.svg", alt="google"> Google
+                    .btn.btn_white.signIn__btn <img class='btn__img'  src="../img/Facebook2.svg", alt="Facebook"> Facebook
+                p.label.signIn__label-top Or
+                label(for="email" ).label.signIn__label Email
+                input(type="text" name='email' placeholder='Enter the Email' required).input
+                label(for="password").label.signIn__label.signIn__label_margin-top Password
+                input(type="password" name='password' placeholder='Enter your password' required).input
+                button.btn.signIn__submit Sign in
+                .signIn__signUp Don't have an account? <a class='signIn__logIn-link modal-link js-btn-reg'>Sign Up</a>
+            .modal__img            
+
+
+.modal(id='js-modal')
+    .content
+            .welcome
+                .welcome__content
+                    .welcome__img-box
+                        img(src="../images/Welcome.svg", alt="welcome").welcome__img
+                    h5.welcome__title Welcome!
+                    p.welcome__text.text We're excited to have you get started. First, you need to confirm your account. Just press the button below.
+                    .welcome__btn
+                        .btn Confirm Account
+                    p.welcome__text.text If that doesn't work, copy and paste the following link in your browser:
+                        <br><br>
+                        <a class='modal-link'>https://bit.li.utlddssdstueincx</a>
+                        <br><br>
+                        |If you have any questions, just reply to this email—we're always happy to help out.
+                        <br><br>
+                        |Cheers,<br>
+                        |iTerms Team
+                .welcome__content.welcome__content_mini
+                    h6.welcome__title.welcome__title_mini Need more help?
+                    a.modal-link.welcome__modal-link We’re here to help you out
+

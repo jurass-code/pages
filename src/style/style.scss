@@ -1,0 +1,40 @@
+@import "libs";
+@import "constants";
+@import "functions";
+@import "mixins";
+
+//какие-то глобальные стили
+@import "common/fonts";
+@import "common/base";
+
+
+@import "blocks/btn.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/nav.scss";
+@import "blocks/select.scss";
+@import "blocks/footer.scss";
+@import "blocks/getStartedFooter.scss";
+@import "blocks/preview.scss";
+@import "blocks/possibilities.scss";
+@import "blocks/howIsWorks.scss";
+@import "blocks/solutions.scss";
+@import "blocks/card.scss";
+@import "blocks/solutionsSwiper.scss";
+@import "blocks/credibility.scss";
+@import "blocks/advantages.scss";
+@import "blocks/provisions.scss";
+@import "blocks/review.scss";
+@import "blocks/reviews.scss";
+@import "blocks/latest.scss";
+@import "blocks/artcle.scss";
+@import "blocks/questions.scss";
+@import "blocks/faq.scss";
+@import "blocks/arrowSwiper.scss";
+@import "blocks/swiper-solution.scss";
+@import "blocks/swiper-review.scss";
+@import "blocks/modal.scss";
+@import "blocks/signUp.scss";
+@import "blocks/signIn.scss";
+@import "blocks/mobileMenu.scss";
+@import "blocks/welcome.scss";

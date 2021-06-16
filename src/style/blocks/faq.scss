@@ -1,0 +1,93 @@
+.faq {
+    &__title {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black;
+        margin-bottom: 24px;
+        min-width: 220px;
+        margin-right: 105px;
+        @include tablet {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+    }
+    &__titles{
+        @include tablet {
+            margin-bottom: 16px;
+        }
+    }
+    &__list {
+        display: inline-block;
+        &-item {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $black;
+            transition: color $time;
+            margin-bottom: 8px;
+            cursor: pointer;
+
+            &:hover {
+                color: $blue;
+            }
+            @include tablet {
+                margin-bottom: 24px;
+            }
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__question {
+        list-style-image: url("../img/icon_outlined.svg");
+        border-bottom: 1px solid $gray;
+        margin-bottom: 16px;
+        cursor: pointer;
+        margin-left: 30px;
+        flex-direction: column;
+        &:hover &-name {
+            opacity: .7;
+        }
+
+        &-name {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            color: $black;
+            padding-bottom: 16px;
+            transition: opacity $time;
+            @include tablet {
+                font-size: 18px;
+            }
+        }
+
+        &-response {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $gray2;
+            display: none;
+            margin-bottom: 48px;
+            &_highlight {
+                font-family: Poppins;
+                font-weight: 400;
+                color: $black;
+                font-size: 17px;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+}

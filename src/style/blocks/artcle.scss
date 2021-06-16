@@ -1,0 +1,51 @@
+.artcle {
+    &__img-box {
+        height: 186px;
+        background: $blue;
+        border-radius: 8px 8px 0px 0px;
+    }
+    width: 255px;
+    &__text-content {
+        
+        text-align: left;
+    }
+
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $gray2;
+        margin-bottom: 24px;
+    }
+
+    &__btn {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $black;
+        padding: 0;
+        cursor: pointer;
+        display: inline;
+    }
+
+    @include tablet {
+        margin-bottom: 32px;
+        width: 330px;
+        &:last-child {
+            margin-bottom: 0;
+            margin-bottom: 32px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+mixin review(img, name, description, text)
+    .review
+        .review__content
+            .review__man
+                img(src= img, alt="img").review__img
+                .review__man-text
+                    .review__name= name
+                    .review__description.text= description
+            .review__comment-box
+                .review__comment
+                p.review__comment-text= text
+                .review__rating
+                    p.review__rating-num 5.0
+                    img(src="../images/Star.svg", alt="star").review__rating-star
+                    img(src="../images/Star.svg", alt="star").review__rating-star
+                    img(src="../images/Star.svg", alt="star").review__rating-star
+                    img(src="../images/Star.svg", alt="star").review__rating-star
+                    img(src="../images/Star.svg", alt="star").review__rating-star
+                    
